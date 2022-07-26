@@ -1,0 +1,508 @@
+.chart {
+  background: conic-gradient(red 12%, gray 0 21%, blue 0 33%, yellow 0 47%, purple 0 58%, green 0 74%, orange 0 100%);
+  border-radius: 75%;
+  width: 40%;
+  height: 0;
+  padding-top: 40%;
+  float: left;
+  padding-right: 20px;
+}
+
+.key {
+  /* width: 50%; */
+  top: 10%;
+  float: right;
+  list-style: none;
+  display: table;
+  border-collapse: separate;
+
+  >li {
+    display: table-row;
+
+    >* {
+      display: table-cell;
+      border-bottom: 12px solid white;
+    }
+  }
+}
+
+.percent {
+  color: white;
+  padding: 10px 2px;
+  text-shadow: 0 0 1px black;
+  text-align: center;
+}
+
+.choice {
+  padding-left: 10px;
+}
+
+.red {
+  background: red;
+}
+
+.gray {
+  background: gray;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.purple {
+  background: purple;
+}
+
+.orange {
+  background: orange;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  padding: 20px;
+  font-family: sans-serif;
+} */
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+
+.gmap_iframe {
+  height: 400px !important;
+}
+
+
+
+dl {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  padding: 20px;
+}
+
+dt {
+  align-self: flex-start;
+  width: 100%;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+
+.text {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 130px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  justify-content: flex-end;
+}
+
+.percentage {
+  font-size: .8em;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 100%;
+  height: 40px;
+  margin-left: 130px;
+  background: repeating-linear-gradient(to right,
+      #ddd,
+      #ddd 1px,
+      #fff 1px,
+      #fff 5%);
+
+  &:after {
+    content: "";
+    display: block;
+    background-color: #3d9970;
+    width: 50px;
+    margin-bottom: 10px;
+    height: 90%;
+
+    /*  top: 50%; */
+
+    /* transition: background-color .3s ease;
+    cursor: pointer; */
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      background-color: #aaa;
+    }
+  }
+}
+
+@for $i from 1 through 100 {
+  .percentage-#{$i} {
+    &:after {
+      $value: ($i * 1%);
+      width: $value;
+
+    }
+  }
+}
+
+
+/* img {
+  width: 300px;
+  max-width: 100%;
+
+  display: block;
+  margin: 0 auto;
+  mask: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/234228/alpha-cat.png") center / 100% no-repeat;
+}
+ */
+.imgtext {
+  font-size: 50px;
+  /*   line-height: 80px;
+   font-weight: 800; */
+  text-transform: uppercase;
+  background: url("./fonts/flower.jpeg");
+/*   color: #de466c; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+.h2{
+ /* 
+  justify-content: center;
+  width: 100%; */
+  height: 100%;
+  margin: 0;
+  font-weight: 900;
+  font-size: 15vw;
+  text-align: center;
+ /*  animation: anim-text-color 16s infinite linear; */
+  text-transform: uppercase;
+  background-color: #ffffff;
+  mix-blend-mode: screen;
+}
+
+.rain{
+  position: relative;
+  width: 60%;
+  height: 50vh;
+  background-image: url(
+    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_BUqnSU-hcr1mMoxzri9l_3cKytZnBNew5g&usqp=CAU);
+                    background-size: cover;
+  background-position: center;
+ 
+}
+.rain::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(
+https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png);
+  animation: rain 0.4s linear infinite;
+  opacity: 1;
+}
+@keyframes rain {
+  0% {
+      background-position: 0 0;
+      opacity: 1;
+  }
+  50%{
+    background-position: 4% 50%;
+    opacity: 1;
+  }
+
+  100% {
+      background-position: 8% 100%;
+      opacity: 1;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+
+//User Defined
+$dataNum:12; 
+$name:"Oct1" "Oct2" "Oct3" "Oct4" "Oct5" "Oct6" "Oct7" "Oct8" "Oct9" "Oct10"  "Oct11" "Oct12" ;
+$data:50% 40% 70% 22% 35% 40% 85% 36% 88% 62% 50% 80%;
+
+//General Settings
+$width:800px;
+$height:300px;
+$color: #0a2efa;
+
+
+.igFrameBar{
+  content: "";
+  width:$width;
+  height:$height;
+  position:relative;
+
+  margin:15% auto 0px auto;
+  transform:translate(0,-50%);
+  border-top:1px solid gray;
+  border-bottom:1px solid gray;
+
+}
+.igFrameBar:before{
+  content:"";
+ 
+  width:100%;
+  height:20%;
+  border-top:1px solid gray;
+  border-bottom:1px solid gray;
+  position:absolute;
+  top:67%;
+}
+.igFrameBar:after{
+  content:"";
+  width:100%;
+  height:20%;
+  background:transparent;
+  position:absolute;
+  top:30%;
+  border-top:1px solid gray;
+  border-bottom:1px solid gray;
+ 
+  border-bottom:1px solid gray;
+}
+.igData{
+  width:10px;
+  position:absolute;
+  bottom:1px;
+  margin:0px 0px 0px 0px;
+  z-index:99;
+  float:left;
+}
+@for $i from 1 through $dataNum {
+    .igData#{$i} {
+       background:blue;
+       border-radius: 10%;
+       height:0px;
+       left:$width/($dataNum+1) * $i + 15;
+       -webkit-animation: showBar#{$i} 1.2s $i*.1s forwards;
+       -moz-animation: showBar#{$i} 1.2s $i*.1s forwards;
+       animation: showBar#{$i} 1.2s $i*.1s forwards;
+    }
+}
+.igData:before{
+  position:absolute;
+  top:-16px;
+  font-size:12px;
+  color:#333;
+  font-family:"roboto";
+  font-weight:300;
+}
+@for $i from 1 through $dataNum {
+    .igData#{$i}:before {
+        content:nth($data,$i)+"";
+    }
+}
+.igData:after{
+  position:absolute;
+  bottom:-55px;
+  transform:rotate(0deg);
+  color:#666;
+  font-size:14px;
+  text-align:left;
+  font-family:"roboto";
+  font-weight:300;
+  width:150px;
+}
+@for $i from 1 through $dataNum {
+    .igData#{$i}:after{
+        content:nth($name,$i)+"";
+    }
+}
+
+@for $i from 1 through $dataNum {
+      @-webkit-keyframes showBar#{$i} {
+    0%   {height: 0px;}
+    100%  {height: nth($data,$i);}
+  }
+}
+@for $i from 1 through $dataNum {
+      @-moz-keyframes showBar#{$i} {
+    0%   {height: 0px;}
+    100%  {height: nth($data,$i);}
+  }
+}
+@for $i from 1 through $dataNum {
+      @keyframes showBar#{$i} {
+    0%   {height: 0px;}
+    100%  {height: nth($data,$i);}
+  }
+}
+
+.barchart-Wrapper {
+  display: table;
+  position: relative;
+  margin: 20px 20px;
+  height: 252px;
+}
+
+.barChart-Container {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+}
+
+.barchart {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 70%;
+  border-bottom: 1px solid gray;
+}
+
+.barchart-Col {
+  position: relative;
+  vertical-align: bottom;
+  display: table-cell;
+  height: 100%;
+}
+
+.barchart-Col+.barchart-Col {
+  border-left: 1px solid transparent;
+}
+
+.barchart-Bar {
+  position: relative;
+  height: 0;
+  transition: height 0.5s 2s;
+  width: 10px;
+  margin: auto;
+}
+
+.barchart-Bar:after {
+  content: attr(attr-height);
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 70%;
+}
+
+.barchart-BarFooter {
+  position: absolute;
+  text-align: center;
+  height: 10%;
+  width: 70%;
+}
+
+.barchart-BarFooter p {
+  color: black;
+}
+
+.barchart-TimeCol {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 70%;
+}
+
+.barchart-Time {
+  height: 20%;
+  vertical-align: middle;
+  position: relative;
+}
+
+.barchart-Time:after {
+  border-bottom: 1px solid gray;
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0em;
+}
+
+.barchart-TimeText {
+  position: absolute;
+  top: -8px;
+  z-index: 1;
+  background: white;
+  padding-right: 5px;
+  color: #4d4d4d;
+  font-size: 15px;
+  font-family: 'Avenir Medium';
+}
+
+.html-bar {
+  background-color: blue;
+}
+
+.hide {
+  display: none;
+}
+.html-bar:hover + .hide{
+ 
+  display: block;
+  color: red;
+ 
+}
+
+.hide1:hover + .hide{
+ 
+  display: block;
+  color: red;
+ 
+} 
+
+
+.css-bar {
+ 
+  background-color: blue;
+}
+
+.js-bar {
+ 
+  background-color: blue;
+}
+
+.python-bar {
+  
+  background-color: blue;
+}
+
+.java-bar {
+  
+  background-color: blue;
+}

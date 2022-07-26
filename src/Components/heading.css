@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+
+
+
+.ct{
+    background-color: rgba(6, 5, 5, 0.994);
+    height: 400px;
+   position: relative;
+  /* width: 100%; */
+ 
+}
+
+
+@media screen and (max-width:500px){
+    .ct{
+        background-color: rgba(6, 5, 5, 0.994);
+        height: 400px;
+       position: relative;
+      width: 500%; 
+    }
+    
+}
+.mirror {
+    /* color:  rgb(29, 28, 28); */
+  
+    -webkit-text-stroke-width: 3px;
+  /*   -webkit-text-fill-color: transparent  ; */
+    font-weight: bold;
+    font-size: 5.5rem;
+ 
+    -webkit-text-stroke-color: #fff ;
+ 
+  /*   transform: scaleY(1); */
+  /*    margin-top:-51px;  */ 
+     white-space: nowrap;
+
+     -webkit-text-fill-color: black  ;
+
+      position: absolute; 
+      top: 10%;
+     left: 10%; 
+   /*   color: #fff;  */
+     /* text-transform: capitalize;
+     color: white;
+     font-size: 50px; */
+     animation-name: example3;
+     animation-duration: 10s;  
+   
+     animation-fill-mode: backwards;
+     animation-timing-function: linear;
+    
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     padding-top: 10px;
+     z-index: 1;
+    
+  }
+  
+  
+  .mirror::after {
+    /* content: attr(data);
+    display: flex;
+    transform: rotateX(180deg);
+    font-size: 7rem;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    white-space: nowrap;
+     margin-top:-20px;  
+    line-height: 0.75em;
+   
+     z-index: 2; 
+
+     opacity: 0.7;  */
+     content: attr(data);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+/* Change the position of transformed element */
+    transform-origin:bottom; 
+/*  Rotates around x-axis */
+transform: rotateX(360deg) scaleX(1.1) scaleY(-0.7) ;
+    line-height: 0.85em;
+/* linear-gradient defined by up,down,left ,right ,diagonal */
+     /*  background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);    */
+     -webkit-background-clip: text;
+  -webkit-text-stroke-color:#888c90; 
+    -webkit-text-fill-color:#a5a9ac;  
+  /*   color: #495057;   */
+    opacity: 0.23; 
+    animation-name: example1;
+    animation-duration: 10s;
+    /* animation-delay: 2s; */
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+    animation-iteration-count: infinite;
+    
+  /*   transform: scaleY(-0.7); */
+    margin-top: -10px;
+    z-index: -1;
+    
+   /*  font-size: 7rem; */
+   
+}
+.mirror::before {
+   /*  content: attr(data);
+    display: flex;
+    font-size: 7rem;
+    transform: rotate(180deg) skewX(-212deg);
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+   
+ 
+    margin-bottom: -40px; 
+    white-space: nowrap;
+    z-index: 1;
+  
+    opacity: 0.7;  */
+    content: attr(data);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+/* Change the position of transformed element */
+  /*   transform-origin: top; */
+/*  Rotates around x-axis */
+transform: rotate(180deg) skewX(-212deg) scaleY(-0.7) scaleX(1.1);
+    line-height: 0.85em;
+   /*  transform: scaleY(-0.7); */
+/* linear-gradient defined by up,down,left ,right ,diagonal */
+   /*  background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);  */
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color:#888c90; 
+    -webkit-text-fill-color:#a5a9ac;  
+ /*   color: #495057;  */         
+     opacity: 0.23; 
+     animation-name: example1;
+     animation-duration: 10s;
+    /*  animation-delay: 2s; */
+     animation-direction: alternate;
+     animation-timing-function: linear;
+    
+     animation-iteration-count: infinite;
+
+     
+     z-index: -1;
+    /*  font-size: 7rem; */
+}
+
+.anm{
+  
+    font-family: "Courier";
+    display: inline-block;
+    font-size: 2rem;
+    background: linear-gradient(to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red);
+-webkit-background-clip: text;
+color: transparent;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s linear 0s infinite alternate;
+     position: absolute;  
+
+}
+.glows{
+    font-family: 'Codystar';
+
+    font-size: 9rem !important;
+ text-align: center;
+  font-weight: bold;
+ -webkit-animation: glow 2s ease-in-out infinite alternate;
+ -moz-animation: glow 2s ease-in-out infinite alternate;
+ animation: glow 2s ease-in-out infinite alternate;
+ white-space: nowrap;
+}
+    
+
+@keyframes example1 {
+    0%   {-webkit-text-stroke-color:red;  }
+    25%  {-webkit-text-stroke-color:yellow; }
+    50%  {-webkit-text-stroke-color:blue; }
+    75%  {-webkit-text-stroke-color:green; }
+    100% {-webkit-text-stroke-color:red;}
+    
+  }
+
+  /* @keyframes example2 {
+    0%   {-webkit-text-stroke-color:red; }
+    25%  {-webkit-text-stroke-color:yellow; }
+    50%  {-webkit-text-stroke-color:blue; }
+    75%  {-webkit-text-stroke-color:green; }
+    100% {-webkit-text-stroke-color:red;}
+    
+  } */
+  @keyframes example3 {
+    0%{left:0px; top:0px;}
+    25% {left:200px; top:0px;}
+    50%{left:200px; top:200px;}
+    75%{left:0px; top:200px;}
+    100%{ left:0px; top:0px;}
+  }
+  @keyframes type{ 
+    from { width: 0; } 
+  }
+
+    @keyframes glow {
+        from {
+         color: #fff;
+       text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+     }
+     
+     to {
+        color: gray;
+       text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+     }
+   }
+  
+   .vid{
+       height: 400px;
+       width: 400px;
+       background-color: aqua;
+       overflow: hidden;
+       margin: 10px;
+    
+      
+   }
+   .di{
+    transform: rotate(-32deg) ; 
+  
+   
+   }
+   .vid2{
+       
+       font-size: 3rem !important;
+    white-space: nowrap;
+    
+  /*   overflow-wrap: normal; */
+   /*  width: 30em; */
+    animation: vi 8s linear  infinite;
+  
+     position: relative;  
+     webkit-backface-visibility: hidden;
+     -webkit-transform: translate3d(0,0,0);
+     
+
+     
+   
+   }
+
+       
+ 
+ 
+   
+   @keyframes vi{ 
+    0% {transform: translate(-50%,0%); } 
+  }

@@ -1,0 +1,45 @@
+.aboutContainer{
+  
+background-image: url("https://yevgenysim-turkey.github.io/touche/assets/img/36.jpg");
+background-size: cover;
+background-position: 50%;
+
+}
+
+
+@mixin important($ds,$ai,$jc,$bc,$h,$fd,$c,$fs) {
+    display:$ds;
+    align-items: $ai;
+    justify-content:$jc;
+
+    background-color:$bc;
+height:$h;
+flex-direction:$fd;
+color:$c;
+font-size: $fs;
+
+}
+.tc{
+    @include important(flex,center,center, null,600px,null,null,null)
+    }
+    .tc1{
+        @include important(flex,center,center, null,90vh,column,null,null) 
+    }
+    .tc2{
+        @include important(flex,center,center, #e9ecef,500px,column,null,null) 
+    }
+    .au{
+        @include important(null,null,null,null,null,null,white,null) 
+    }
+    .tc3{
+        @include important(flex,center,center, null,60vh,column,null,null) 
+    }
+
+
+.qu{
+    @include important(null,null,null,null,null,null,black,18px) 
+}
+.img23{
+    height: 50vh;
+    clip-path: polygon(5% 0,100% 0,100% 100%,0 100%);
+}

@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Conv_PlayfairDisplay-BoldItalic';
+	src: url('./fonts/fonts/PlayfairDisplay-BoldItalic.eot');
+	src: local('☺'), url('./fonts/fonts/PlayfairDisplay-BoldItalic.woff') format('woff'), url('./fonts/fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'), url('./fonts/fonts/PlayfairDisplay-BoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+.reservationContainer{
+    background-image: url("https://yevgenysim-turkey.github.io/touche/assets/img/32.jpg");
+        background-size: cover;
+        background-position: 50%;
+}
+
+.ff{
+    font-family: 'Conv_PlayfairDisplay-BoldItalic';
+}
+.block-decoration-1:before {
+    border-width: 1px 1px 0 0;
+    right: 0;
+    top: 0;
+}
+.block-decoration-1:after,
+ .block-decoration-1:before {
+    border-color: #f5a637;
+    border-style: solid;
+    content: "";
+    height: 2rem;
+    position: absolute;
+    width: 2rem;
+}
+.block-decoration-1:after {
+    border-width: 0 0 1px 1px;
+    bottom: 0;
+    left: 0;
+}
+.block-decoration-1:after, .block-decoration-1:before {
+    border-color: #f5a637;
+    border-style: solid;
+    content: "";
+    height: 2rem;
+    position: absolute;
+    width: 2rem;
+}

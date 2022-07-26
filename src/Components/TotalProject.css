@@ -1,0 +1,121 @@
+.expcon12{
+    box-shadow: 5px 10px 10px 10px whitesmoke;
+    border-radius: 5px;
+     height: auto; 
+     position: absolute;
+     bottom: -150%;
+     right: 0%;
+}
+.vrline12{
+    border-left: 3px solid grey;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+  /*   margin-left: -3px; */
+    top: 260%;
+}
+.svgconi12{
+    position: absolute;
+    left:10%;
+    top:260%;
+    text-align: justify; /* For Edge */
+  -moz-text-align-last: right; /* For Firefox prior 58.0 */
+  text-align-last: right;
+}
+.svgcon112{
+    position: absolute;
+    right:10%;
+    top:260%;
+    text-align: justify; /* For Edge */
+  -moz-text-align-last: left; /* For Firefox prior 58.0 */
+  text-align-last: left;
+}
+.bgicon12{
+     background-image: url("https://shreethemes.in/techwind/layouts/assets/images/personal/cta.jpg"); 
+    background-repeat: repeat-y;
+    
+
+    background-color: rgb(100, 88, 109); 
+    background-size: cover;  
+     height: 50vh; 
+   /*  width: auto; */
+  
+   /*  width: 100vw; */ 
+  /*   height: 50vh; */
+   /*   position: absolute;
+    bottom: -230%;   */
+   
+   /*  margin: 25px; */
+  /*  left: 10%;
+   right: 10%; */
+    
+    }
+    .carddesc12{
+      /*   position: absolute;
+        left: 38%;
+        bottom: -265%; */
+       /*  text-align: center;
+        align-items: center; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 115px;
+        margin-top: 55px;
+    }
+
+    .portcon{
+       /*  position: absolute;
+        bottom: -450%;
+        right: 10%; */
+    }
+
+    .footercon12{
+        background-color:rgb(28, 28, 28);
+        position: relative;
+        height: 10vh;
+      /*   width: 100vw; */
+       /*  bottom: -460%;
+        height: 50px;
+        position: absolute; */
+      /*   text-align: center;
+        width: 100%; */
+           /* margin: 35px;  */
+         /*   left: 10%; */
+         /*   right: 15%; */
+    /*  padding-left: 20px;   */
+    
+    
+    }
+    .cookiecon12{
+        box-shadow: 2px 2px 2px 2px whitesmoke;
+        /* border-radius: 10px; */
+        position: fixed;
+        bottom: -1%;
+        right: 32%;
+        /* color: white; */
+        background-color: white;
+        height: 10vh;
+    }
+    .footi112{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+       /*  position: absolute;
+        bottom: 40%;
+        right: 15%; */
+    }
+    .arrcon12{
+       /*  position: absolute;
+        bottom: -2%;
+        right: 5%; */
+    }
+
+    .backspaceicon{
+        position: fixed;
+        bottom: 3%;
+        right:32% ;
+    }
+    .cim{
+        height: 22px;
+        width: 22px;
+    }

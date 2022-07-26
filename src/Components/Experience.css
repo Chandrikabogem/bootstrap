@@ -1,0 +1,80 @@
+.employcon{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: #f7f9fb;
+    border-color: #f9fafb;
+
+
+
+   /*  position: absolute;
+    left:40%;
+    top:20%; */
+}
+.bgicon{
+/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnk6t9nqOHd_WPPHxEu509fk2_gyaXEGs6VQ&usqp=CAU"); */
+background-repeat: repeat-y;
+background-color: rgb(100, 88, 109);
+background-size: cover;
+width: 100vw;
+height: 0vh;
+ position: absolute;
+bottom: 0%;  
+
+}
+.carddesc{
+    position: absolute;
+    left: 40%;
+    bottom: -35%;
+    text-align: center;
+}
+.bgi{
+    width: 70vw; 
+     height: 55vh; 
+    background-repeat: repeat-y;
+}
+.expcon{
+    box-shadow: 5px 10px 10px 10px whitesmoke;
+    border-radius: 5px;
+     height: auto; 
+}
+.vrline{
+    border-left: 3px solid grey;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+  /*   margin-left: -3px; */
+    top: 20%;
+}
+.svgconi{
+    position: absolute;
+    left:20%;
+    top:20%;
+    text-align: justify; /* For Edge */
+  -moz-text-align-last: right; /* For Firefox prior 58.0 */
+  text-align-last: right;
+}
+.content21{
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: right; /* For Firefox prior 58.0 */
+    text-align-last: right;
+}
+.lenovoimg2{
+    height: 35px;
+    width: 35px;
+}
+.svgcon1{
+    position: absolute;
+    right:20%;
+    top:20%;
+    text-align: justify; /* For Edge */
+  -moz-text-align-last: left; /* For Firefox prior 58.0 */
+  text-align-last: left;
+}
+.content12{
+    text-align: justify; /* For Edge */
+    -moz-text-align-last: left; /* For Firefox prior 58.0 */
+    text-align-last: left;
+}
